@@ -7,6 +7,16 @@ customer:
 {{#partial "page"}}
 
 {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
+<div style="padding-bottom:20px">
+<a href="https://www.myfitfoods.com/login.php?action=logout" style="text-transform: uppercase;
+    margin-left: -7px;
+    padding: 10px 10px 5px 10px;
+    font-weight: 900;
+    font-size: 26px;
+    text-decoration: none;
+    color: white;
+    background-color: #64be6b;">Log Out</a>
+</div>
 <h1 class="page-heading">{{lang 'account.orders.heading' }}</h1>
 {{> components/account/navigation account_page='orders'}}
 

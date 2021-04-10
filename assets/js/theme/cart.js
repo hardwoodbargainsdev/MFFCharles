@@ -6,7 +6,6 @@ import ShippingEstimator from './cart/shipping-estimator';
 import { defaultModal, modalTypes } from './global/modal';
 import swal from './global/sweet-alert';
 import CartItemDetails from './common/cart-item-details';
-
 import PickupOrDelivery from './ob-custom/ob-shipping';
 
 export default class Cart extends PageManager {
@@ -456,3 +455,8 @@ export default class Cart extends PageManager {
         this.shippingEstimator = new ShippingEstimator($('[data-shipping-estimator]'));
     }
 }
+
+console.log("adding load class to unhide button");
+$(window).load(function() {
+    $("a#ob-shipping-checkout-trigger").addClass('loaded');
+});

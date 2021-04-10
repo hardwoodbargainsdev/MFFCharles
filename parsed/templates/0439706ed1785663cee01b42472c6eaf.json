@@ -1,3 +1,1 @@
-{
-  "components/ob-custom/home/ob-covid-banner": "<div class=\"ob-covid-banner\">\r\n\t<div class=\"container\">\r\n\t\t<p class=\"ob-paragraph-md ob-text-white\">\r\n\t\t\tRead our <a href=\"/covid-19/\" class=\"ob-paragraph-md\">COVID-19 update page</a> to learn how we're keeping out customers\r\n\t\t\t&amp; FitFam safe.\r\n\t\t</p>\r\n\t</div>\r\n</div>\r\n"
-}
+{"components/ob-custom/home/ob-covid-banner":"<div class=\"ob-covid-banner\">\r\n\t<div class=\"container\">\r\n\t\t<p class=\"ob-paragraph-md ob-text-white\">\r\n\t\t\tRead our <a href=\"/covid-19/\" class=\"ob-paragraph-md\">COVID-19 update page</a> to learn how we're keeping out customers\r\n\t\t\t&amp; FitFam safe.\r\n\t\t</p>\r\n\t</div>\r\n</div>\r\n"}
