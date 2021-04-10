@@ -24,3 +24,10 @@
 .cart-actions {
 	padding-bottom: 20px;
 }
+
+a#ob-shipping-checkout-trigger {
+    visibility: hidden;
+}
+a#ob-shipping-checkout-trigger.loaded{
+visibility: visible;    
+}

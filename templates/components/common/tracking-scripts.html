@@ -1,0 +1,110 @@
+<!-- Adroll -->
+<script type="text/javascript">
+    adroll_adv_id = "F3NRYU3NJBAIHCBXL5APYC";
+    adroll_pix_id = "RC7N65PLGFDRJDJLEWDN6X";
+    adroll_version = "2.0";
+
+    (function(w, d, e, o, a) {
+        w.__adroll_loaded = true;
+        w.adroll = w.adroll || [];
+        w.adroll.f = [ 'setProperties', 'identify', 'track' ];
+        var roundtripUrl = "https://s.adroll.com/j/" + adroll_adv_id
+                + "/roundtrip.js";
+        for (a = 0; a < w.adroll.f.length; a++) {
+            w.adroll[w.adroll.f[a]] = w.adroll[w.adroll.f[a]] || (function(n) {
+                return function() {
+                    w.adroll.push([ n, arguments ])
+                }
+            })(w.adroll.f[a])
+        }
+
+        e = d.createElement('script');
+        o = d.getElementsByTagName('script')[0];
+        e.async = 1;
+        e.src = roundtripUrl;
+        o.parentNode.insertBefore(e, o);
+    })(window, document);
+    adroll.track("pageView");
+</script>
+
+<!-- Global site tag (gtag.js) - Google Ads: 428890707 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-428890707"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-428890707');
+</script>
+
+<!-- GA tracking, maybe  unneeded from above site tag? idk -->
+<script>
+    !function(){var analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.loadPlatform=function(t,e,a,o){window[o||"analytics"]=analytics;window._analytics_js_global_name=o;analytics.platformSettings=e;analytics.platformPlan=a;var r=document.createElement("script");r.type="text/javascript";r.defer=!0;r.src="https://cdn11.bigcommerce.com/shared/js/storefront/analytics-c7af4d4e323cc1137c45f692e81cae05fd2a3986.js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)};analytics.SNIPPET_VERSION="4.0.0_platform";
+        analytics.loadPlatform("", { "Google Analytics": {"enhancedLinkAttribution":true,"enhancedEcommerce":true,"includeSearch":true,"sendUserId":true,"trackingId":"UA-156230156-1","dimensions":[],"metrics":[]} }, {}, "analytics");
+        analytics.identify();
+        analytics.page();
+        
+        analytics.ready(function () {
+            ga('require', 'ec');
+            ga('require', 'linker');
+            ga('linker:autoLink', ["www.myfitfoods.com","ad.buybutton.store","store-3pp378gtvu.mybigcommerce.com","www.store-3pp378gtvu.mybigcommerce.com"]);
+        });
+    }}();
+</script>
+
+<!-- Convertcart stuff -->
+<script>
+/*ConvertCart.com-33683164*/(function(c,o,n,v,e,r,t,s){s=c.fetch?'f':'',
+c.ccartObj=e,c[e]=c[e]||function(){(c[e].q=c[e].q||[]).push(arguments)},c[e].t=Date.now(),
+r=o.createElement(n);r.async=1;r.src=v+s+'.js';t=o.getElementsByTagName(n)[0];t.parentNode
+.insertBefore(r,t)})(window, document,'script','//cdn.convertcart.com/33683164','ccart')
+</script>
+
+<script data-cfasync="false">
+window.ccLayer = window.ccLayer || [];
+ccLayer.push({
+ccEvent: 'categoryViewed',
+src: 'custom',
+id: '{{category.id}}',
+name: '{{category.name}}',
+url: '{{category.url}}',
+});
+</script>
+
+<!-- Mouseflow -->
+<script type="text/javascript">
+  window._mfq = window._mfq || [];
+  (function() {
+    var mf = document.createElement("script");
+    mf.type = "text/javascript"; mf.defer = true;
+    mf.src = "//cdn.mouseflow.com/projects/ae9fd9d5-cc7f-4014-aed0-75bfa222c522.js";
+    document.getElementsByTagName("head")[0].appendChild(mf);
+  })();
+</script>
+
+<!-- Start Tracking Code for analytics_siteverification -->
+<meta name="facebook-domain-verification" content="nj4a9w5brnb3tkcvg65b5rnhpxqlci" />
+<!-- End Tracking Code for analytics_siteverification -->
+
+<script type='text/javascript'>
+!function(d,s) {
+  var rc = "//go.referralcandy.com/purchase/m3fk9tm0a15o10orkl81iwbfe.js";
+  var js = d.createElement(s);
+  js.src = rc;
+  var fjs = d.getElementsByTagName(s)[0];
+  fjs.parentNode.insertBefore(js,fjs);
+}(document,"script");
+</script>
+<script data-cfasync="false">
+  window.ccLayer = window.ccLayer || [];
+    ccLayer.push({
+    ccEvent: 'orderCompleted',
+    orderId: '%%ORDER_ID%%',
+    total: '%%ORDER_AMOUNT%%',
+    currency: 'USD',
+    src: 'custom',    
+  });
+</script>
+
+
+<script data-cfasync="false">window.ccLayer = window.ccLayer || [];ccLayer.push({ccEvent: 'orderCompleted',orderId: '%%ORDER_ID%%',total: %%ORDER_AMOUNT%%,currency: 'USD',src: 'custom',});</script>

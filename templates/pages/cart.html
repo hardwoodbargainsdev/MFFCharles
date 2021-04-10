@@ -2,6 +2,14 @@
 cart: true
 ---
 {{#partial "page"}}
+<noscript>
+    <style>
+        a#ob-shipping-checkout-trigger {
+            visibility: visible;
+        }
+    </style>
+</noscript>
+
 <div class="page">
 
     <main class="page-content" data-cart>
@@ -27,6 +35,7 @@ cart: true
             {{{region name="cart_below_totals"}}}
             
             {{#if cart.show_primary_checkout_button}}
+                
                 <div class="cart-actions cart-content-padding-right">
                     <a id="ob-shipping-checkout-trigger" class="button button--primary" href="{{urls.checkout.single_address}}" title="{{lang 'cart.checkout.title'}}">{{lang 'cart.checkout.button'}}</a>
                     {{#if cart.show_multiple_address_shipping}}
@@ -35,6 +44,7 @@ cart: true
                         </a>
                     {{/if}}
                 </div>
+
             {{else}}
                 <div class="cart-actions cart-content-padding-right">
                     <a class="button" href="{{urls.home}}" title="{{lang 'cart.continue_shopping'}}">{{lang 'cart.continue_shopping'}}</a>
